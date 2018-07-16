@@ -9,7 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 nunjucks.configure('templates', {
   autoescape: true,
-  express: app
+  express: app,
+  watch: true,
 });
 
 app.use(routes);
